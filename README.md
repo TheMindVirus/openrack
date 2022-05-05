@@ -47,8 +47,8 @@ Some rack-mountable devices take the form of wedge consoles with rack-ears as op
 # Blades
 
 A relatively new addition to the Server space is the inclusion of Games Consoles as Cloud Server Blades \
-for Online Multiplayer and Immersive Virtual Reality Experiences which are custom built, \
-especially for those who wouldn't normally have access to this kind of equipment.
+for Online Multiplayer and Immersive Virtual Reality Experiences which are custom built \
+\- especially for those who wouldn't normally have access to this kind of equipment.
 
 ![openrack](/img/DOCS/openrack.png)
 
