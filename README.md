@@ -16,8 +16,6 @@ manufacture it in the real world.
 Integrating these systems together in the form of imaginary models and image textures results in a composition \
 which would otherwise be either impossible or difficult to achieve for one person alone with limited resources.
 
-![screenshot2](/img/DOCS/screenshot2.png)
-
 # Cabinets
 
 While choosing textures in OpenRack, the following 6 classes of server were derived:
@@ -35,6 +33,8 @@ Specification Levels: [ENTR], [EDGE], [SPEC]
 Infrastructure Levels: [ECON], [PERF], [CRIT]
 ```
 Server Equipment can take many forms depending on the application and subcategory it falls into.
+
+![screenshot2](/img/DOCS/screenshot2.png)
 
 # Wedges
 
