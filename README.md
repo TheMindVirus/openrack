@@ -55,3 +55,15 @@ especially for those who wouldn't normally have access to this kind of equipment
 The above image shows an Open Rack 2U server built by Microsoft containing several cloud Xbox consoles \
 with networking and power distribution in one box. OpenRack can be extended in Unity to add in models for \
 custom equipment such as GPU's, ARM-based DPU's as Plug-In Cards and Open Rack units with modular architecture.
+
+# Trade Shows
+
+In times before global pandemics, manufacturers of especially the computing and networking spaces used to \
+showcase their newest equipment at trade shows. The show floor would be filled with the most diverse variety \
+of new technology, gadgets and showcases, with great focus on magical things that seemingly couldn't be done before.
+
+![showfloor](/img/DOCS/showfloor.png)
+
+OpenRack could become a game similar to PC Building Simulator, with the aim of innovating new hardware \
+to showcase at virtual (or otherwise augmented reality) trade show events orchestrated by anyone with \
+an Edge Server that can run 3D Applications, especially the manufacturers who can sponsor and built it.
