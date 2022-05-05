@@ -71,7 +71,9 @@ an Edge Server that can run 3D Applications, especially the manufacturers who ca
 # Firmware
 
 While it is possible to use Unity C# and ShaderLab Scripting to fully emulate virtual systems in a closed environment, \
-OpenRack leaves this fully open to expansion in future builds of the engine. The simplicity of being able to dynamically \
-set a texture should provide enough functionality for a variety of Graphical User Interfaces.
+OpenRack leaves this fully open to expansion in future builds of the engine.
+
+The simplicity of being able to dynamically set a texture should provide enough functionality \
+for the production of a variety of Graphical User Interfaces.
 
 ### *More Complex isn't necessarily Better.*
