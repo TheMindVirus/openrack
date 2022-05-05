@@ -67,3 +67,9 @@ of new technology, gadgets and showcases, with great focus on magical things tha
 OpenRack could become a game similar to PC Building Simulator, with the aim of innovating new hardware \
 to showcase at virtual (or otherwise augmented reality) trade show events orchestrated by anyone with \
 an Edge Server that can run 3D Applications, especially the manufacturers who can sponsor and built it.
+
+# Firmware
+
+While it is possible to use Unity C# and ShaderLab Scripting to fully emulate virtual systems in a closed environment, \
+OpenRack leaves this fully open to expansion in future builds of the engine. The simplicity of being able to dynamically \
+set a texture should provide enough functionality for a variety of Graphical User Interfaces. More complex isn't necessarily better.
