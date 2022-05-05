@@ -1,5 +1,7 @@
-# openrack
+# OpenRack
 3D Web Visualiser for Designing Rack Mountable Systems and Network Cabinets for Critical Infrastructure
+
+### Demo: https://themindvirus.github.io/openrack
 
 ![screenshot](/img/DOCS/screenshot.png)
 
@@ -29,12 +31,27 @@ Cabinet 6 - Mission Critical Robustness Class [CRITICAL]
 ```
 These Categories can further be split into 2 groups of 3 subcategories:
 ```
-Specification Levels: [ENTRY], [EDGE], [SPECIALIST] \
-Infrastructure Levels: [ECONOMY], [PERFORMANCE], [CRITICAL]
+Specification Levels: [ENTR], [EDGE], [SPEC]
+Infrastructure Levels: [ECON], [PERF], [CRIT]
 ```
+Server Equipment can take many forms depending on the application and subcategory it falls into.
 
 # Wedges
+
+The equipment used in OpenRack is not limited to 19" racks with fine statistical tolerances. \
+Instead, it is open to accept any texture specified - which can then be self-limited at a later stage. \
+Some rack-mountable devices take the form of wedge consoles with rack-ears as optional accessories.
+
 ![wedge](/img/DOCS/wedgecomputing.png)
 
 # Blades
+
+A relatively new addition to the Server space is the inclusion of Games Consoles as Cloud Server Blades \
+for Online Multiplayer and Immersive Virtual Reality Experiences which are custom built, \
+especially for those who wouldn't normally have access to this kind of equipment.
+
 ![openrack](/img/DOCS/openrack.png)
+
+The above image shows an Open Rack 2U server built by Microsoft containing several cloud Xbox consoles \
+with networking and power distribution in one box. OpenRack can be extended in Unity to add in models for \
+custom equipment such as GPU's, ARM-based DPU's as Plug-In Cards and Open Rack units with modular architecture.
