@@ -10,8 +10,8 @@ Visualising Systems is considerably less expensive, more environmentally friendl
 compared to building the real life equivalent of such a system - that also requires more effort and resources.
 
 Each manufacturer designs their ideal rack mountable system for themselves once in real life and then again \
-in a 3D virtual space. An entirely theoretical architecture is also possible to design, removing the need to \
-manufacture it in the real world.
+in a 3D virtual space. An entirely theoretical dream architecture is also possible to design with OpenRack, \
+removing the need to manufacture it in the real world.
 
 Integrating these systems together in the form of imaginary models and image textures results in a composition \
 which would otherwise be either impossible or difficult to achieve for one person alone with limited resources.
