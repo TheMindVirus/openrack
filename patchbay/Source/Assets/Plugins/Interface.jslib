@@ -1,0 +1,1 @@
+mergeInto(LibraryManager.library, { GetSightedYield: function(cuid) { GetSightedYield(cuid); } });

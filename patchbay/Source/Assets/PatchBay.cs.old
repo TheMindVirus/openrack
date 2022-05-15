@@ -1,0 +1,94 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEditor;
+
+[Serializable]
+public class PatchData
+{
+    public List<string> A;
+    public List<string> B;
+}
+
+public class PatchBay : MonoBehaviour
+{
+    public Material highlight = null;
+    private Material matprevious = null;
+
+    Ray ray = new Ray();
+    RaycastHit hit = new RaycastHit();
+    Transform lines = null;
+    Transform sighted = null;
+    PatchData patch = new PatchData();
+
+    static string GetAbsolutePath(Transform t, string path = "")
+    {
+        if (t.parent) { path += GetAbsolutePath(t.parent, path); }
+        return path + "/" + t.name + "_" + t.GetSiblingIndex().ToString();
+    }
+
+    static Transform GetTransformByPath(string path)
+    {
+        foreach (Transform t in UnityEngine.Object.FindObjectsOfType(typeof(Transform)))
+        {
+            if (GetAbsolutePath(t) == path) { return t; }
+        }
+        return null;
+    }
+
+    void ClearLines() { foreach (Transform t in lines) { Transform.DestroyImmediate(t); } }
+    void DrawLine(Vector3 a, Vector3 b, Color c, float d)
+    {
+        GameObject line = new GameObject();
+        line.name = "Line";
+        line.transform.parent = lines;
+        line.transform.position = a;
+        line.AddComponent<LineRenderer>();
+        LineRenderer liner = line.GetComponent<LineRenderer>();
+        //liner.material = new Material(Shader.Find("Particles/Alpha Blended Premultiply"));
+        liner.material = new Material(Shader.Find("Legacy Shaders/Particles/Alpha Blended Premultiply"));
+        liner.SetPosition(0, a);
+        liner.SetPosition(1, b);
+        liner.startColor = liner.endColor = c;
+        liner.startWidth = liner.endWidth = d;
+    }
+
+    public void SetPatch(string json)
+    {
+        ClearLines();
+        patch = JsonUtility.FromJson<PatchData>(json);
+        for (int i = 0; i < patch.A.Count; ++i)
+        {
+            try
+            {
+                DrawLine(GetTransformByPath(patch.A[i]).position,
+                         GetTransformByPath(patch.B[i]).position,
+                         new Color(1.0f, 0.0f, 0.25f), 1.0f);
+            } catch { Debug.Log("Link Error"); }
+        }
+    }
+
+    public string GetLink() { return GetAbsolutePath(sighted); }
+
+public Transform TEST = null;
+
+    void Start()
+    {
+        lines = transform.Find("/Lines");
+        SetPatch("{\"A\": [\"22444\"], \"B\": [\"22386\"]}");
+Debug.Log(GetAbsolutePath(TEST));
+    }
+
+    void Update()
+    {
+        ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
+        if (Physics.Raycast(ray, out hit))
+        {
+            if (sighted) { sighted.gameObject.GetComponent<Renderer>().material = matprevious; }
+            sighted = hit.collider.transform;
+            matprevious = sighted.gameObject.GetComponent<Renderer>().material;
+            sighted.gameObject.GetComponent<Renderer>().material = highlight;
+        }
+    }
+}

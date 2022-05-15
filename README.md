@@ -2,6 +2,8 @@
 3D Web Visualiser for Designing Rack Mountable Systems and Network Cabinets for Critical Infrastructure
 
 ### Demo: https://themindvirus.github.io/openrack
+### Patchbay: https://themindvirus.github.io/openrack/patchbay
+### Patchbay (Source): https://github.com/themindvirus/openrack/tree/main/patchbay
 
 ![screenshot](/img/DOCS/screenshot.png)
 
