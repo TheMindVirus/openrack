@@ -10,9 +10,9 @@ https://github.com/TheMindVirus/openrack/blob/2b455aabc9fa14f656c3f279bd63018f5c
 https://github.com/TheMindVirus/openrack/blob/2b455aabc9fa14f656c3f279bd63018f5c048655/patchbay/index.html#L67
 
 # CUID
-In the context of OpenRack PatchBay, a CUID stands for Constant Unique IDentifier. \
+In the context of OpenRack PatchBay, a CUID stands for **Constant Unique IDentifier**. \
 The principle of uniqueness is shared with UUID and GUID but instead of Universal or Global uniqueness, \
-CUID focusses on keeping a constant interface that remains invariant (doesn't change) between versions. \
+CUID focusses on keeping a constant interface that remains invariant (doesn't change) between versions.
 
 This helps maintain backwards/forwards compatibility for serialisation (loading/saving) and is tagged on \
 to the Unity GameObject/Transform's name because `m_LocalIdentfierInFile` was mis-spelt and `GetInstanceID()` \
